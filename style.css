@@ -1,0 +1,30 @@
+@keyframes colorCycle {
+    0% {
+        background-color: #000000;
+    }
+    33% {
+        background-color: #3b0764; 
+    }
+    66% {
+        background-color: #14532d; 
+    }
+    100% {
+        background-color: #000000; 
+    }
+}
+
+.animated-hero {
+    animation: colorCycle 12s ease-in-out infinite;
+    transition: background-color 1s ease;
+}
+
+.reveal-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal-element.active {
+    opacity: 1;
+    transform: translateY(0);
+}
